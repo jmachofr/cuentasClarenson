@@ -1,0 +1,21 @@
+.new-expense-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.expense-form input {
+  padding: 5px;
+  margin: 5px;
+}
+
+.expense-form button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.back-button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
