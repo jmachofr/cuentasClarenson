@@ -1,21 +1,91 @@
 .new-expense-container {
-  text-align: center;
-  margin-top: 50px;
+    background-color: #0D0D0D;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25vh;
+    align-items: center;
 }
 
-.expense-form input {
-  padding: 5px;
-  margin: 5px;
+.new-expense-title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.1;
 }
 
-.expense-form button {
-  margin: 10px;
-  padding: 10px 20px;
-  cursor: pointer;
+/* --- Title Styles --- */
+.new-expense-title span {
+    display: block;
+    font-size: 2.3rem; /* Larger font size */
+    font-weight: 700; /* Bold/Extra bold */
+    text-align: center;
+    color: #ffffff;
 }
 
-.back-button {
-  margin-top: 20px;
-  padding: 8px 16px;
-  cursor: pointer;
+.new-expense-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* --- Form Styles --- */
+.new-expense-form form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.new-expense-form input {
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2a2a2a;
+    border: 2px solid #333;
+    padding: 15px 0;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.new-expense-form input::placeholder {
+    color: #999; /* Light gray placeholder text */
+}
+
+.new-expense-form input:focus {
+    outline: none;
+    border-color: #007bff; /* Bright blue focus color, like the buttons */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
+
+/* --- Button Styles (Matching the image) --- */
+.new-expense-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.back-button, .create-button, .add-button{
+    margin: 10px;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+    background-color: #1E90FF; 
+    color: #ffffff;
+}
+
+.back-button:hover, .create-button:hover {
+    background-color: #FF0099;
 }
