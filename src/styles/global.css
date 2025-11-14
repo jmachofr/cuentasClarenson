@@ -1,0 +1,76 @@
+/* === GLOBAL MOBILE-FIRST RESET === */
+* {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === HOME CONTAINER === */
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0D0D0D;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+.home-container h1 {
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+/* === BUTTONS WRAPPER === */
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 320px; /* keeps it clean on large screens too */
+}
+
+/* === BUTTONS STYLE === */
+.home-buttons button {
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  padding: 15px 0;
+  border-radius: 12px;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover (only appears on desktop, mobile users don’t see hover) */
+.home-buttons button:hover {
+  background-color: #FF0099;
+}
+
+/* Tap feedback for mobile */
+.home-buttons button:active {
+  transform: scale(0.97);
+}
+
+/* === RESPONSIVE === */
+@media (min-width: 600px) {
+  .home-container h1 {
+    font-size: 2.3rem;
+  }
+
+  .home-buttons button {
+    font-size: 1.2rem;
+    padding: 16px 0;
+  }
+}
